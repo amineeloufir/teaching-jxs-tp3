@@ -10,12 +10,29 @@
 <body ng-app="pokedex">
 
 	<div class="container">
-		<h1>PokÃ©sir</h1>
+		<h1>Pokésir</h1>
 
 		<!-- Search -->
-		<div></div>
+		<div ng-controller="Ctrl" >
+		<p>Name : <input type="text" ng-model="name">
+		</p>	<button ng-click="id2">go</button>
+	
+		<h1>Hello {{name}}</h1>
+		
+		
+<select ng-model="name2">
+<option ng-repeat="x in test | filter : name" value="{{x.id}}">{{x.name}}</option>
+</select>
 
-		<!-- PokÃ©mon information -->
+
+<h1>You selected: {{name2}}</h1>
+		</div>
+
+		
+		
+	
+		
+			<!-- Pokémon information -->
 		<div></div>
 
 	</div>
