@@ -15,18 +15,25 @@
 		<!-- Search -->
 		<div ng-controller="Ctrl" >
 		<p>Name : <input type="text" ng-model="name">
-		</p>	<button ng-click="id2">go</button>
 	
-		<h1>Hello {{name}}</h1>
+		
+	
+	
 				<h1>Hello {{name}}</h1>
 		
 		
-<select ng-model="name2">
-<option ng-repeat="x in test | filter : name" value="{{x.id}}">{{x.name}}</option>
-</select>
+	<select ng-model="name2">
+	<option ng-repeat="x in test | filter : name" value="{{x.id}}">{{x.name}}</option>
+	</select>
+</p>	<button ng-click="goSearch()">go</button>
 
+	<h1>You selected: {{name2}}</h1>
+	
+	
+	<select ng-model="name3">
+	<option ng-repeat="x in test2 | filter : name "value="{{x.id}}">{{x.name}}
+		</option></select>
 
-<h1>You selected: {{name2}}</h1>
 		</div>
 
 		
